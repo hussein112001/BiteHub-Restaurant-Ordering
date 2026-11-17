@@ -1,0 +1,12 @@
+export const menuItems = [
+  { id: 1, name: 'Classic Smash Burger', category: 'Burgers', price: 9.5, rating: 4.9, time: '15-20 min', description: 'Double smashed beef, cheddar, pickles and our signature sauce.', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85', tag: 'Bestseller' },
+  { id: 2, name: 'Margherita Pizza', category: 'Pizza', price: 11, rating: 4.8, time: '20-25 min', description: 'Stone-baked crust, fresh mozzarella, basil and tomato.', image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=900&q=85', tag: 'Popular' },
+  { id: 3, name: 'Crispy Chicken Wrap', category: 'Wraps', price: 8, rating: 4.7, time: '10-15 min', description: 'Crispy chicken, lettuce, tomato and creamy garlic dressing.', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85', tag: 'Fresh' },
+  { id: 4, name: 'Truffle Mushroom Pasta', category: 'Pasta', price: 13.5, rating: 4.9, time: '20-25 min', description: 'Creamy parmesan sauce, sautéed mushrooms and truffle oil.', image: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=85', tag: 'Chef choice' },
+  { id: 5, name: 'Loaded Fries', category: 'Sides', price: 5.5, rating: 4.6, time: '8-12 min', description: 'Golden fries topped with cheddar sauce and fresh herbs.', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=85', tag: 'Shareable' },
+  { id: 6, name: 'Berry Cheesecake', category: 'Desserts', price: 6, rating: 4.8, time: '5-8 min', description: 'Silky baked cheesecake with a bright berry topping.', image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=85', tag: 'Sweet' },
+  { id: 7, name: 'Iced Caramel Latte', category: 'Drinks', price: 4.5, rating: 4.7, time: '5 min', description: 'Cold espresso, milk and a touch of house caramel.', image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85', tag: 'Chilled' },
+  { id: 8, name: 'Garden Power Bowl', category: 'Healthy', price: 10, rating: 4.6, time: '12-15 min', description: 'Quinoa, avocado, greens, roasted vegetables and lemon dressing.', image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85', tag: 'Healthy' },
+]
+
+export const categories = ['All', 'Burgers', 'Pizza', 'Wraps', 'Pasta', 'Sides', 'Desserts', 'Drinks', 'Healthy']

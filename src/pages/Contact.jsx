@@ -1,0 +1,10 @@
+import { useState } from 'react'
+import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react'
+
+export default function Contact() {
+  const [form, setForm] = useState({ name: '', email: '', message: '' })
+  const [sent, setSent] = useState(false)
+  const change = e => setForm({ ...form, [e.target.name]: e.target.value })
+  const submit = e => { e.preventDefault(); setSent(true); setForm({ name: '', email: '', message: '' }) }
+  return <section className="page-section container"><div className="page-intro"><span className="eyebrow">WE'D LOVE TO HEAR FROM YOU</span><h1>Say hello<span>.</span></h1><p>Questions, feedback or just want to say hi? Send us a message.</p></div><div className="contact-layout"><div className="contact-info"><h2>Let's talk.</h2><p>Explore our contact form as part of this student frontend demo.</p><div className="contact-item"><span><MapPin/></span><div><b>Find us</b><small>Beirut, Lebanon</small></div></div><div className="contact-item"><span><Phone/></span><div><b>Call us</b><small>Demo contact - no active phone line</small></div></div><div className="contact-item"><span><Mail/></span><div><b>Email us</b><small>hello@bitehub.example</small></div></div><div className="contact-item"><span><Clock/></span><div><b>Opening hours</b><small>Sample hours · 11:00 AM – 11:00 PM</small></div></div></div><form className="contact-form" onSubmit={submit}><h3>Send a message</h3><label>Your name<input required name="name" value={form.name} onChange={change} placeholder="e.g. Alex Morgan"/></label><label>Email address<input required type="email" name="email" value={form.email} onChange={change} placeholder="alex@email.com"/></label><label>Your message<textarea required name="message" rows="5" value={form.message} onChange={change} placeholder="How can we help?"/></label><button className="btn btn-primary" type="submit">Send message <Send size={16}/></button>{sent && <p className="success-message">Thanks! Your message has been recorded for this demo.</p>}<small className="form-note">Demo form: messages are not sent to a real server.</small></form></div></section>
+}
